@@ -2,12 +2,11 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "fapiaozhushouai",
   "compatibility_date": "2026-05-15",
-  "compatibility_flags": ["nodejs_compat"],
-
-  "services": [
-    {
-      "binding": "WORKER_SELF_REFERENCE",
-      "service": "fapiaozhushouai"
-    }
+  "observability": {
+    "enabled": true
+  },
+  "compatibility_flags": [
+    "nodejs_compat"
   ]
+  // ✅ 这里删掉所有 services / WORKER_SELF_REFERENCE 配置
 }
