@@ -6,6 +6,7 @@ const nextConfig = {
    * 按需把本机局域网 IP 或通配域名加进来；仅 development 生效。
    * @see https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
    */
+   output: "export",   // ← 新增这一行
   allowedDevOrigins: ["192.168.0.39", "127.0.0.1", "localhost"],
   typescript: {
     ignoreBuildErrors: true,
